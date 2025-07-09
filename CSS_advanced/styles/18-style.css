@@ -43,7 +43,10 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 4%;
   --nav-item-display: inline-block;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3 0;
   --nav-item-link-hover: var(--color-primary);
 }
 
@@ -134,7 +137,8 @@ a:active {
 }
 
 .footer {
-	padding: var(--footer-padding)
+	padding: var(--footer-padding);
+	text-align: var(--section-footer-align);
 }
 
 .navbar-menu {
@@ -162,4 +166,8 @@ a:active {
   	padding-bottom: 50%;
   	padding-left: 100%;
   	padding-right: 100%;
+}
+
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
 }
