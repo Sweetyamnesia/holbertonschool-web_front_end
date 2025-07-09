@@ -157,12 +157,12 @@ a:active {
 	font-size: var(--nav-item-font-size);
 	display: var(--nav-item-display);
 	margin: var(--nav-item-margin);
+	letter-spacing: var(--nav-item-letter-spacing);
 }
 
 .nav .nav-link {
 	display: block;
-	padding: 1rem 2rem;
-
+	padding: 0.5rem 1rem;
 }
 
 .nav .nav-link:hover {
