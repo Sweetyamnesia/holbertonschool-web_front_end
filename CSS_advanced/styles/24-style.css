@@ -233,14 +233,14 @@ ul.footer {
 	margin: none;
 }
 
-.card-services .a {
+.card-services a {
 	display: block;
 	padding: 2rem;
 	background-color: var(--color-primary);
 
 }
 
-.card-services:hover .a {
+.card-services:hover a {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 	text-decoration: none;
