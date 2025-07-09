@@ -45,7 +45,6 @@ html {
   --nav-item-font-size: var(--font-size-medium);
   --nav-item-letter-spacing: 4%;
   --nav-item-display: inline-block;
-  --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3 0;
   --nav-item-link-hover: var(--color-white);
   --section-tagline-margin: 0;
@@ -179,10 +178,10 @@ a:active {
 
 .nav .nav-link {
 	display: block;
-	padding-top: 50%;
-  	padding-bottom: 50%;
-  	padding-left: 100%;
-  	padding-right: 100%;
+	padding-top: 50rem;
+  	padding-bottom: 50rem;
+  	padding-left: 100rem;
+  	padding-right: 100rem;
 }
 
 .nav .nav-link:hover {
@@ -191,7 +190,7 @@ a:active {
 
 ul.row {
 	margin: 0;
-	padding: none;
+	padding: 0;
 	list-style: none;
 }
 
@@ -210,7 +209,7 @@ ul.row {
 }
 
 .footer-copyright {
-	margin: none;
+	margin: 0;
 	font-size: var(--font-size-small);
 	color: var(--text-color);
 }
