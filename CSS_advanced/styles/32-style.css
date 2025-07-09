@@ -45,7 +45,6 @@ html {
   --nav-item-font-size: var(--font-size-medium);
   --nav-item-letter-spacing: 4%;
   --nav-item-display: inline-block;
-  --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3 0;
   --nav-item-link-hover: var(--color-white);
   --section-tagline-margin: 0;
@@ -60,7 +59,8 @@ html {
   --button-hover-background: var(--color-primary);
   --header-padding: 4rem 0 0;
   --header-logo-position: relative;
-  --header-logo-link-display: absolute;
+  --header-logo-link-display: inline-block;
+  --header-logo-link-position: absolute;
   --header-logo-link-top: -1rem;
   --header-logo-link-left: 0;
   --transition-duration: .3s;
@@ -137,7 +137,7 @@ a:active {
 }
 
 .section-footer {
-	padding: var(--section-footer-align);
+	padding: var(--section-footer-padding);
 }
 
 .section-tagline {
@@ -193,7 +193,7 @@ a:active {
 
 ul.row {
 	margin: 0;
-	padding: none;
+	padding: 0;
 	list-style: none;
 }
 
@@ -212,7 +212,7 @@ ul.row {
 }
 
 .footer-copyright {
-	margin: none;
+	margin: 0;
 	font-size: var(--font-size-small);
 	color: var(--text-color);
 }
@@ -234,7 +234,7 @@ ul.footer {
 	--button-color: var(--color-white);
 }
 
-.footer-adress {
+.footer-address {
 	color: var(--text-color);
 }
 
@@ -355,9 +355,9 @@ ul.footer {
 
 .card-work .card-inner {
 	position: absolute;
-	top: -0,1rem;
-	left: -0,1rem;
-	right: -0,1rem;
+	top: -0.1rem;
+	left: -0.1rem;
+	right: -0.1rem;
 	z-index: 1;
 	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
