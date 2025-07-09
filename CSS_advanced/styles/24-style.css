@@ -217,7 +217,7 @@ ul.footer {
 	background-color: var(--color-black);
 }
 
-.footer-adress {
+.footer-address {
 	color: var(--text-color);
 }
 
@@ -236,11 +236,11 @@ ul.footer {
 .card-services a {
 	display: block;
 	padding: 2rem;
-	background-color: var(--color-primary);
+	background-color: var(--color-grey);
 
 }
 
-.card-services:hover a {
+.card-services a:hover {
 	color: var(--color-white);
 	background-color: var(--color-primary);
 	text-decoration: none;
