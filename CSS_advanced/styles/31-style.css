@@ -179,10 +179,10 @@ a:active {
 
 .nav .nav-link {
 	display: block;
-	padding-top: 50%;
-  	padding-bottom: 50%;
-  	padding-left: 100%;
-  	padding-right: 100%;
+	padding-top: 50rem;
+  	padding-bottom: 50rem;
+  	padding-left: 100rem;
+  	padding-right: 100rem;
 }
 
 .nav .nav-link:hover {
