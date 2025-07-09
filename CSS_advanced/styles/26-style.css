@@ -43,8 +43,7 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;
-  --nav-item-display: inline-block;
+  --nav-item-letter-spacing: 0.04em;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3 0;
   --nav-item-link-hover: var(--color-primary);
@@ -227,7 +226,7 @@ ul.footer {
 	--button-color: var(--color-white);
 }
 
-.footer-adress {
+.footer-address {
 	color: var(--text-color);
 }
 
