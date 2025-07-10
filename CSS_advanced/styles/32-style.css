@@ -43,9 +43,9 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 4%;
+  --nav-item-letter-spacing: 0.04em;
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 3 0;
+  --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-white);
   --section-tagline-margin: 0;
   --button-display: inline-block;
@@ -181,10 +181,10 @@ a:active {
 
 .nav .nav-link {
 	display: block;
-	padding-top: 50%;
-  	padding-bottom: 50%;
-  	padding-left: 100%;
-  	padding-right: 100%;
+	padding-top: 50rem;
+  	padding-bottom: 50rem;
+  	padding-left: 100rem;
+  	padding-right: 100rem;
 }
 
 .nav .nav-link:hover {
