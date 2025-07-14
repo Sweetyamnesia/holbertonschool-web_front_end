@@ -43,7 +43,7 @@ html {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.04em;
+  --nav-item-letter-spacing: 0.04rem;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-white);
@@ -182,6 +182,7 @@ a:active {
 .nav .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
+	position: relative;
 }
 
 .nav .nav-link:hover {
@@ -194,9 +195,9 @@ ul.row {
 	list-style: none;
 }
 
-.col {
+[class^="col-"] {
   float: left;
-  padding: 50%;
+  padding: 0.5rem;
 }
 
 
@@ -254,10 +255,10 @@ ul.footer {
 
 }
 
-.card-services:hover a {
-	color: var(--color-white);
-	background-color: var(--color-primary);
-	text-decoration: none;
+.card-services a:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
 }
 
 .button {
@@ -287,7 +288,7 @@ ul.footer {
 	height: 10rem;
 }
 
-.card-testimonial .card-quote .cite {
+.card-testimonial .card-quote cite {
 	display: block;
 	padding: 1rem;
 	color: var(--color-primary);
@@ -303,7 +304,7 @@ ul.footer {
 }
 
 .section-hero .section-inner {
-	padding: 10rem 40rem 2rem 0;
+	padding: 10rem 5rem 2rem 0;
 }
 
 .header {
@@ -360,15 +361,10 @@ ul.footer {
 }
 
 .card-work:hover .card-inner {
-	text-align: center;
-	margin: 0;
-	opacity: 0;
-	height: 100%;
-	position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.card-title a,
-.card-work a {
+.card-work .card-title a {
 	display: block;
 	text-decoration: none;
 	padding-top: 45%;
@@ -388,6 +384,16 @@ ul.footer {
 	opacity: 1;
 }
 
+.card-work .card-title {
+  opacity: 0;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+
 .card-testimonial .card-quote {
 	position: relative;
 }
@@ -403,6 +409,7 @@ ul.footer {
 
 .card-work:hover .card-image {
 	transform: scale(1.2);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
